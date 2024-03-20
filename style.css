@@ -2,11 +2,11 @@
 
 :root {
     --cor-de-fundo: #00050b;
-    --verde: #6c82af;
+    --verde: #5ab9a8 ;
     --branco: #c3ddff;
-    --botao-ativo: #070f20;
-    --botao-inativo: rgba(78, 104, 130, 0.5);
-    --texto-fundo: rgba(55, 70, 94, 0.3);
+    --botao-ativo: #254d70;
+    --botao-inativo: #070f20;
+    --texto-fundo:  #254d7089;
 }
 
 body {
@@ -89,8 +89,36 @@ body {
     text-transform: uppercase;
 }
 .contador{
-    font-size: 20px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.contador-digito{
+    padding: 0 16px;
     text-align: center;
+}
+
+.contador-digito-numero{
+    font-size: 80px;
+    margin: 0;
+}
+
+.contador-digito-texto{
+    color: var(--verde);
+    font-size: 20px;
+    margin: 0;
+}
+.contador{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contador-digito{
+    padding: 0 16px;
+    text-align: center;
+    min-width: 100px;
 }
 
 @media screen and (min-width: 768px) {
