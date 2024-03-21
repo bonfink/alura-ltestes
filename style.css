@@ -1,18 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Madimi+One&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap')
+;
 
 :root {
-    --cor-de-fundo: #00050b;
     --verde: #5ab9a8 ;
-    --branco: #c3ddff;
-    --botao-ativo: #254d70;
-    --botao-inativo: #070f20;
-    --texto-fundo:  #254d7089;
+    --branco: #bedaffda;
+    --botao-ativo: #3d6098;
+    --botao-inativo:#060D1F;
+    --texto-fundo:  #254d7031;
 }
 
 body {
     background-color: var(--cor-de-fundo);
     color: var(--branco);
-    font-family: 'Chakra Petch', sans-serif;
+    font-family: "Madimi One", sans-serif;
 }
 
 
@@ -29,7 +29,7 @@ body {
 .titulo-principal {
     text-align: center;
     width: 100%;
-    font-size: 32px;
+    font-size: 42px;
 }
 
 .titulo-principal span {
@@ -38,7 +38,7 @@ body {
 
 
 .botao {
-    font-family: 'Chakra Petch', sans-serif;
+    font-family: "Madimi One", sans-serif;
     background-color: var(--botao-inativo);
     color: var(--branco);
     display: flex;
@@ -54,7 +54,7 @@ body {
 }
 
 .botao:first-child {
-    border-radius: 40px 40px 0 0;
+    border-radius: 10px 10px 0 0;
 }
 
 .botoes {
@@ -69,7 +69,11 @@ body {
 .abas-textos{
     background-color: var(--texto-fundo);
     padding: 40px;
-    border-radius: 0 0 40px 40px;
+    border-radius: 0 0 30px 30px;
+    border-bottom: 2px solid var(--botao-ativo);
+    border-left: 2px solid var(--botao-ativo);
+    border-right: 2px solid var(--botao-ativo);
+    border-top: none;
 }
 .aba-conteudo.ativo{
     display:block;
@@ -95,7 +99,7 @@ body {
     flex-wrap: wrap;
 }
 .contador-digito{
-    padding: 0 16px;
+    padding: 0 10px;
     text-align: center;
     min-width: 100px;
 }
@@ -119,10 +123,10 @@ body {
     }
 
     .botao:first-child {
-        border-radius: 40px 0 0 0;
+        border-radius: 30px 0 0 0;
     }
 
     .botao:last-child {
-        border-radius: 0 40px 0 0;
+        border-radius: 0 30px 0 0;
     }
 }
